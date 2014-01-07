@@ -9,10 +9,6 @@ def coroutine(func):
     def start(*args, **kwargs):
         cr = func(*args, **kwargs)
         cr.next()
-
-
-        cr = func(*args, **kwargs)                                                                                      [0/749]
-        cr.next()
         return cr
     return start
 
